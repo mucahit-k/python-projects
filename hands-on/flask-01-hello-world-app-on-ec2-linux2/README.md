@@ -31,7 +31,7 @@ At the end of the this hands-on training, students will be able to;
 
 ## Part 1 - Getting to know the Python Flask framework
 
-![Flask](./flask/flask.png)
+![Flask](./flask.png)
 
 Flask is a web application development framework written in Python. It is a micro-framework that provides only the essential components which makes it easier to begin with when compared to full-stack frameworks like Django which has boilerplate code and dependencies.
 And yet, Flask provides libraries, tools, and modules to develop web applications with additional features like authentication, database ORM, etc. 
@@ -66,7 +66,7 @@ Followings are some of features of Flask Framework;
 
 ## Part 3 - Write a Simple Hello World Web Application on GitHub Repo
 
-- Create folder named `hands-on-flask-01-hello-world-app-on-ec2-linux2` within `clarusway-python-workshop` repo
+- Create folder named `flask-01-hello-world-app-on-ec2-linux2` within `clarusway-python-workshop` repo
 
 - Create python file named `hello-world-app.py`
 
@@ -80,9 +80,9 @@ Followings are some of features of Flask Framework;
 
 - Enable the web application to be run in main, so that it can be reached from anywhere from port 80.
 
-- Save the complete code as `hello-world-app.py` file under `hands-on-flask-01-hello-world-app-on-ec2-linux2` folder.
+- Save the complete code as `hello-world-app.py` file under `hands-on/flask-01-hello-world-app-on-ec2-linux2` folder.
 
-- Add and commit `hello-world-app.py` on local repo
+- Add and commit all changes on local repo
 
 - Push `hello-world-app.py` to remote repo `clarusway-python-workshop` on GitHub.
 

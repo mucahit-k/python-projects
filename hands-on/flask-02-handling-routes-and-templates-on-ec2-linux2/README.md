@@ -1,4 +1,4 @@
-# Hands-on Flask-02 : Handling Routes and Templating with Flask Web Application
+# Hands-on Flask-02 : Handling Routes and Templates with Flask Web Application
 
 Purpose of the this hands-on training is to give the students introductory knowledge of how to handle routes and use html templates within a Flask web application on Amazon Linux 2 EC2 instance. 
 
@@ -22,19 +22,19 @@ At the end of the hands-on training, students will be able to;
 
 ## Outline
 
-- Getting to know routing and HTTP URLs.
+- Part 1 - Getting to know routing and HTTP URLs.
 
-- Install Python and Flask framework Amazon Linux 2 EC2 Instance 
+- Part 2 - Install Python and Flask framework Amazon Linux 2 EC2 Instance 
 
-- Write a Web Application with Sample Routings and Templating on GitHub Repo
+- Part 3 - Write a Web Application with Sample Routings and Templating on GitHub Repo
 
-- Run the Web App on EC2 Instance
+- Part 4 - Run the Web App on EC2 Instance
 
-## Getting to know routing and HTTP URLs.
+## Part 1 - Getting to know routing and HTTP URLs.
 
 HTTP (Hypertext Transfer Protocol) is a request-response protocol. A client on one side (web browser) asks or requests something from a server and the server on the other side sends a response to that client. When we open our browser and write down the URL (Uniform Resource Locator), we are requesting a resource from a server and the URL is the address of that resource. The structure of typical URL is as the following.
 
-![URL anatomy](./flask/url-structure.png)
+![URL anatomy](./url-structure.png)
 
 The server responds to that request with an HTTP response message. Within the response, a status code element is a 3-digit integer defines the category of response as shown below.
 
@@ -48,7 +48,7 @@ The server responds to that request with an HTTP response message. Within the re
 
 - 5xx -> Server Error
 
-## Install Python and Flask framework Amazon Linux 2 EC2 Instance 
+## Part 2 - Install Python and Flask framework Amazon Linux 2 EC2 Instance 
 
 - Launch an Amazon EC2 instance using the Amazon Linux 2 AMI with security group allowing SSH (Port 22) and HTTP (Port 80) connections.
 
@@ -64,13 +64,13 @@ The server responds to that request with an HTTP response message. Within the re
 
 - Check the versions of Flask framework packages (flask, click, itsdangerous, jinja2, markupSafe, werkzeug)
 
-## Write a Web Application with Sample Routings and Templating on GitHub Repo
+## Part 3 - Write a Web Application with Sample Routings and Templating on GitHub Repo
 
-- Create folder named `hands-on-flask-02-handling-routes-on-ec2-linux2` within `clarusway-python-workshop` repo
+- Create folder named `flask-02-handling-routes-and-templates-on-ec2-linux2` within `clarusway-python-workshop` repo
 
 - Create python file named `app.py`
 
-- Write an application with routing samples and save the complete code under `hands-on-flask-02-handling-routes-on-ec2-linux2` folder.
+- Write an application with routing and templating samples and save the complete code under `hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2` folder.
 
 ```python
 #Import Flask modules
@@ -116,19 +116,19 @@ The server responds to that request with an HTTP response message. Within the re
 
 - Write a template html file named `evens.html` which shows a list of even numbers from 1 to 10 under `templates` folder 
 
-- Create a folder named `static` under `hands-on-flask-02-handling-routes-on-ec2-linux2` folder and create a text file named `mytext.txt` with *This is a text file in static folder* content.
+- Create a folder named `static` under `hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2` folder and create a text file named `mytext.txt` with *This is a text file in static folder* content.
 
-- Add and commit `app.py` and `mytext.txt` on local repo
+- Add and commit all changes on local repo
 
-- Push `app.py` and `mytext.txt` to remote repo `clarusway-python-workshop` on GitHub.
+- Push `app.py`, `greet.html`, `list10.html`, `evens.html`, and `mytext.txt` to remote repo `clarusway-python-workshop` on GitHub.
 
-## Run the Hello World App on EC2 Instance
+## Part 4 - Run the Hello World App on EC2 Instance
 
 - Download the web application file from GitHub repo.
 
 - Run the web application
 
-- Connect the route handling web application from the web browser and try every routes configured
+- Connect the route handling and templating web application from the web browser and try every routes configured
 
 - Open the static file `mytext.txt` context from the web browser
 

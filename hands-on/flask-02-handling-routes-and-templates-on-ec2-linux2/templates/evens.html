@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Numbers</title>
+</head>
+<body>
+    <h1>Even numbers 1 to 10</h1>
+    <ul>
+        {% for i in nums %}
+            {% if i % 2 == 0 %}
+                <li>Number {{ i }} is even</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
